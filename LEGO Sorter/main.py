@@ -7,8 +7,8 @@ servo = PWM(Pin(5), freq=50, duty_u16=0)
 tilt_servo = PWM(Pin(4), freq=50, duty_u16=0)
 
 # bucket 1-4 -> servo angle, spread evenly across a narrower sweep
-BUCKET_ANGLE_MIN = 30
-BUCKET_ANGLE_MAX = 120
+BUCKET_ANGLE_MIN = 20
+BUCKET_ANGLE_MAX = 110
 BUCKET_ANGLES = {
     1: BUCKET_ANGLE_MIN,
     2: BUCKET_ANGLE_MIN + (BUCKET_ANGLE_MAX - BUCKET_ANGLE_MIN) / 3,
